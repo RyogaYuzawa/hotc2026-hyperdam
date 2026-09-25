@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "release": {
+    "pipeline": "shared-encoder-dual-state-hsi-v3-static-bbox-containment-v3-amodal-v10-empty-mask-rts",
+    "val75_score": 0.69768
+  },
+  "external_source": {
+    "path": "external/sam3",
+    "repository": "https://github.com/facebookresearch/sam3.git",
+    "bundled": false,
+    "commit": "20dba30a35a497606b06cf241f5b5605ea10e77e",
+    "runtime_file": "sam3/model_builder.py",
+    "runtime_sha256": "faba3d0099f3da6d63d3ca49a8bf945d4014657b813e76ad082602d3922d3ff6",
+    "profiles": [
+      "full",
+      "runtime"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "THIRD_PARTY_LICENSES/SAM_LICENSE",
+      "sha256": "4dea99bfaa016e21bc860d73f344236bd1e5c4977d1a9a8fd32f822b500ae1be",
+      "role": "verbatim Meta SAM License",
+      "profiles": [
+        "full",
+        "runtime"
+      ]
+    },
+    {
+      "path": "weights/sam3.pt",
+      "sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+      "size": 3450062241,
+      "role": "SAM3 backbone checkpoint",
+      "bundle": "model-weights",
+      "source": {
+        "repository": "facebook/sam3",
+        "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+        "filename": "sam3.pt",
+        "gated": true
+      },
+      "profiles": [
+        "full",
+        "runtime"
+      ]
+    },
+    {
+      "path": "weights/amodal-v10.pt",
+      "sha256": "718f34dd59f828762b8b0ca33be66516f26968c1d77893a0ac58b2e3d35c3966",
+      "size": 38957486,
+      "role": "amodal v10 main checkpoint",
+      "bundle": "model-weights",
+      "source": {
+        "repository": "ryo818/HOTC2026-Amodal",
+        "revision": "fff9b5e564f661bd520196bf526d8ead5d097403",
+        "filename": "amodal-v10.pt",
+        "gated": false
+      },
+      "profiles": [
+        "full",
+        "runtime"
+      ]
+    }
+  ]
+}

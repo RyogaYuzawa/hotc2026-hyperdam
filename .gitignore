@@ -1,0 +1,72 @@
+# Secrets: never store Kaggle credentials in this repository.
+kaggle.json
+**/kaggle.json
+rclone.conf
+**/rclone.conf
+credentials.json
+**/credentials.json
+client_secret*.json
+**/client_secret*.json
+*token*.json
+.env
+.env.*
+!.env.example
+*.cookie
+*.cookies
+cookies.txt
+.secrets/
+.kaggle-test-*/
+.rclone-test-*/
+
+# Downloaded competition data and caches.
+data/
+!data/
+data/*
+!data/splits/
+!data/splits/*.json
+datasets/
+extracted/
+artifacts/
+outputs/
+submissions/
+checkpoints/
+*.zip
+
+# Generated experiment outputs and heavyweight runtime files.
+result/
+results/
+runs/
+logs/
+wandb/
+.cache/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.npy
+*.npz
+*.tar
+*.tar.gz
+
+# Third-party source checkouts are reproduced by the pinned release setup.
+external/
+
+# Python / notebooks.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv
+.venv/
+
+# Local tooling.
+.DS_Store
+.idea/
+.vscode/
+research
+
+.scratchpad

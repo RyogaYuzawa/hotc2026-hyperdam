@@ -1,0 +1,42 @@
+{
+  "built_at_utc": "2026-09-23T14:06:20Z",
+  "format": "hotc2026-hyperdam-direct-v10-release-v1",
+  "branch": "main",
+  "pipeline": "shared-encoder-dual-state-hsi-v3-static-bbox-containment-v3-amodal-v10-empty-mask-rts",
+  "implementation_result": {
+    "dataset": "HOTC 2026 Val75",
+    "frames": 26860,
+    "score": 0.69768,
+    "sequences": 75
+  },
+  "historical_competition_result": {
+    "final_rank": 2,
+    "auc_percent": 68.0093,
+    "dp_at_20_percent": 87.7703,
+    "team": "Alpha AI"
+  },
+  "runtime_source": {
+    "bundled": false,
+    "repository": "https://github.com/facebookresearch/sam3.git",
+    "commit": "20dba30a35a497606b06cf241f5b5605ea10e77e",
+    "runtime_sha256": "faba3d0099f3da6d63d3ca49a8bf945d4014657b813e76ad082602d3922d3ff6"
+  },
+  "release_verification": {
+    "official_sam3_adapter": true,
+    "trackbench_dependency_removed": true,
+    "smoke_frames": 92,
+    "smoke_sequences": 1,
+    "cache_free": true,
+    "shared_encoder_exact_frames": 682,
+    "shared_encoder_exact_sequences": 5,
+    "status": "pass"
+  },
+  "model_sources": {
+    "sam3": "https://huggingface.co/facebook/sam3/blob/3c879f39826c281e95690f02c7821c4de09afae7/sam3.pt",
+    "amodal_v10": "https://huggingface.co/ryo818/HOTC2026-Amodal/blob/fff9b5e564f661bd520196bf526d8ead5d097403/amodal-v10.pt"
+  },
+  "credentials_included": false,
+  "official_validation_data_included": false,
+  "model_weights_tracked_by_git": false,
+  "paper_included": false
+}

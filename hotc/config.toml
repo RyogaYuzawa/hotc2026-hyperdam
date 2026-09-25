@@ -1,0 +1,6 @@
+[model]
+history_frames = 50
+
+[data]
+validation_root = "../data/HOTC2026/validation"
+sample_submission = "../data/HOTC2026/sample_submisson.csv"

@@ -1,0 +1,36 @@
+Release verification environment
+================================
+
+OS: Ubuntu 22.04.5 LTS
+Kernel: Linux 6.8.0-1015-aws x86_64
+Python: 3.10.15
+pip: 25.2
+setuptools: 75.8.0
+wheel: 0.45.1
+GPU: NVIDIA L4, 23034 MiB
+NVIDIA driver: 535.309.01
+PyTorch: 2.5.1+cu124
+CUDA reported by PyTorch: 12.4
+torchvision: 0.20.1
+click: 8.1.8
+numpy: 2.2.2
+opencv-python: 4.11.0.86
+psutil: 7.0.0
+scipy: 1.15.1
+scikit-learn: 1.7.2
+joblib: 1.5.3
+Pillow: 11.1.0
+timm: 1.0.26
+einops: 0.8.2
+iopath: 0.1.10
+pycocotools: 2.0.8
+huggingface-hub: 1.9.0
+Official SAM3: 20dba30a35a497606b06cf241f5b5605ea10e77e
+
+Install the project dependencies with:
+
+  bash scripts/setup.sh
+
+The tested PyTorch CUDA build may require the matching PyTorch wheel index for
+the target CUDA installation. Do not place credentials inside the environment
+or release archive.
